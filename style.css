@@ -1,0 +1,70 @@
+
+body {
+    background-image: url("images/mtn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", monospace;
+    color: seashell;
+    display: flex;
+}
+
+.image {
+    width: 35%;
+}
+
+.bg {
+    height: 20vh;
+    width: 100%;
+    background-color: hsla(0, 0%, 10%, 80%);
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    background-color: hsl(0, 0%, 10%);
+    width: 65%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#pitch {
+    line-height: 2rem;
+    width: 80%;
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+#fields-header {
+    font-size: 1.5rem;
+    color: seagreen;
+    margin: 30px 0 10px 20px;
+}
+
+.fieldsets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.field {
+    margin: 10px 20px 10px 20px;
+    width: 40%;
+}
+
+.field input {
+    height: 3vh;
+    width: 100%;
+    color:seashell
+}
+
+input {
+    background-color: hsl(0, 0%, 30%);
+    border: 2px solid seagreen;
+    width: 30%;
+    display: block;
+}
