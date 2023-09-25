@@ -10,38 +10,44 @@
 </head>
 <body>
     <div class="image">
-        <div class="bg"><p>logo</p></div>
+        <div class="bg"><img src="images/logo.png" alt="logo" width="180" height="180"></div>
     </div>
-    <div class="form">
-        <div id="pitch">This is a totally real and not at all fake site so fake information can be gathered! Please do not input anything tha would doxx you as I don't know what to do with it! <br> <br>ok thx byeeee</div>
+    <div class="main">
+        <div id="pitch">This is fake webpage to gather absolutely nothing at all! If you want to type things in here it's going to go literally nowhere! <br><i>(That being said, I would advise not putting anything that would doxx you...just be safe y'know?)</i></div>
 
         <div id="fields-header">Let's Rock & Roll!</div>
 
-        <div class="fieldsets">
+        <form class="fieldsets" method="post">
             <div class="field">
-            <label for="first-name">First Name:</label>
-            <input type="text" name="first-name">
+            <label for="first-name">*First Name:</label>
+            <input type="text" name="first-name" required>
             </div>
             <div class="field">
             <label for="last-name">Last Name:</label>
             <input type="text" name="last-name">
             </div>
             <div class="field">
-            <label for="email">Email:</label>
-            <input type="email" name="email">
+            <label for="email">*Email:</label>
+            <input type="email" name="email" required>
             </div>
             <div class="field">
             <label for="phone-number">Phone:</label>
             <input type="text" name="phone-number">
             </div>
             <div class="field">
-            <label for="password">Password:</label>
-            <input type="password" name="password">
+            <label for="password">*Password:</label>
+            <input type="password" name="password" required>
             </div>
             <div class="field">
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" name="confirm-password">
+            <label for="confirm-password">*Confirm Password:</label>
+            <input type="password" name="confirm-password" required>
             </div>
+            <p id="note">*denotes required information</p>
+        </form>
+
+        <div class="account">
+            <button type="submit" id="create">Create Account</button>
+            <p id="sign-in">Already created an account? <a href="https://github.com/bryce-wiseman/odin-form">Click here</a> to sign in!</p>
         </div>
     </div>
 </body>
